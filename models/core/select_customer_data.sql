@@ -7,5 +7,3 @@ from raw.core.hub_customer hubc
      join raw.core.sat_customer satc 
        on satc.hk_customer = hubc.hk_customer
 
-
-       
