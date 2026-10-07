@@ -1,0 +1,14 @@
+MySmappProj:
+  outputs:
+    dev:
+      account: TMQWOXN-CM17041
+      database: RAW
+      password:
+       eyJraWQiOiIxNTE3ODE1NjcyNzU0MTgyIiwiYWxnIjoiRVMyNTYifQ.eyJwIjoiOTA0Njg4Njg6MjMxNjAwMjk3MDEiLCJpc3MiOiJTRjoxMDE0IiwiZXhwIjoxNzkyMjM3MTgwfQ.1baNghpJA3W7k1JwmexsD6lgA5sSU0lpCPeFqrmjTXphxNhliWDPY6qUv1vGCdFUa_Ts-mRo3FJiq11AepMysA
+      role: ACCOUNTADMIN
+      schema: CORE
+      threads: 2
+      type: snowflake
+      user: BDTWBO
+      warehouse: compute_wh
+  target: dev
