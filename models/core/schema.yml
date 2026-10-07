@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: select_customer_data # Entspricht standardmäßig dem Dateinamen (mein_modell_name.sql)
+    config:
+      schema: CORE   # Ändert das Schema (Standard: target_schema + custom_schema)
+      alias: SELCUSTDATA # Optional: Überschreibt den physischen Tabellennamen im Data Warehouse
+      
+  - name: select_customer_data_cpy # Entspricht standardmäßig dem Dateinamen (mein_modell_name.sql)
+    config:
+      schema: CORE   # Ändert das Schema (Standard: target_schema + custom_schema)
+      alias: SELCUSDAT # Optional: Überschreibt den physischen Tabellennamen im Data Warehouse
