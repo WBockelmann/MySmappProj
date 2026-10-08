@@ -4,5 +4,5 @@
         {{ default_schema }}
     {%- else -%}
         {{ custom_schema_name | trim }}
-    {%- endif -%
+    {%- endif -%}
 {%- endmacro %}
