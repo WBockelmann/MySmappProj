@@ -39,3 +39,10 @@ models:
     
 on-run-start:
   - "{{ get_version() }}"
+  - "{{ ensure_log_table_exists() }}"
+  - "{{ log_on_run_start() }}"
+  - "{{ ensure_log_hook_exists() }}"
+
+
+on-run-end:
+  - "{{ log_on_run_end() }}"
