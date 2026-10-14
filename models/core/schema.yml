@@ -20,7 +20,14 @@ models:
     config:
       schema: CORE   # Ändert das Schema (Standard: target_schema + custom_schema)
       materialized: 'ephemeral'
-      # alias: SELEKTEN_ALLE_2 # Optional: Überschreibt den physischen Tabellennamen im Data Warehouse
+      # Optional: Überschreibt den physischen Tabellennamen im Data Warehouse
+      # 
+      # Vorteile sind separate implementierung
+      # Nachteile sind der cte Einbau bringt code, der in sich traege und unwirtschaftlich arbeitet !?
+      # der cte wird zur cte in SELEKTEN, da SELEKTEN einen ref erzeugt hat auf "xxx_2"
+      # das ist eine design Entscheidung, die ggfls immer wieder angeschaut werden muss
+      # 
+      # alias: SELEKTEN_ALLE_2 
 
   - name: SELEKTEN # Entspricht standardmäßig dem Dateinamen (mein_modell_name.sql)
     config:
