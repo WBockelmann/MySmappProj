@@ -10,3 +10,19 @@ models:
     config:
       schema: CORE   # Ändert das Schema (Standard: target_schema + custom_schema)
       alias: SELCUSDAT # Optional: Überschreibt den physischen Tabellennamen im Data Warehouse
+
+  - name: SELEKTEN_1 # Entspricht standardmäßig dem Dateinamen (mein_modell_name.sql)
+    config:
+      schema: CORE   # Ändert das Schema (Standard: target_schema + custom_schema)
+      alias: SELEKTEN_ALLE_1 # Optional: Überschreibt den physischen Tabellennamen im Data Warehouse
+
+  - name: SELEKTEN_2 # Entspricht standardmäßig dem Dateinamen (mein_modell_name.sql)
+    config:
+      schema: CORE   # Ändert das Schema (Standard: target_schema + custom_schema)
+      materialized: 'ephemeral'
+      # alias: SELEKTEN_ALLE_2 # Optional: Überschreibt den physischen Tabellennamen im Data Warehouse
+
+  - name: SELEKTEN # Entspricht standardmäßig dem Dateinamen (mein_modell_name.sql)
+    config:
+      schema: CORE   # Ändert das Schema (Standard: target_schema + custom_schema)
+      alias: SELEKTEN # Optional: Überschreibt den physischen Tabellennamen im Data Warehouse

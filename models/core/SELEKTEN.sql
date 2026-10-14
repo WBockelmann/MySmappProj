@@ -1,5 +1,11 @@
-select *
-from {{ ref('select_customer_data_cpy') }}
-where last_name = 'M.'
-      or
-      last_name = 'P.'
+
+
+select  *
+from    {{ ref('SELEKTEN_1') }}
+
+union
+
+select  *
+from    {{ ref('SELEKTEN_2') }}
+
+
