@@ -37,3 +37,5 @@ models:
     core:
       +materialized: table
     
+on-run-start:
+  - "{{ get_version() }}"
